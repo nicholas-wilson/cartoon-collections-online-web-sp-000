@@ -19,12 +19,15 @@ def long_planeteer_calls(calls)
   end
 end
 
-def find_the_cheese(cheese)
+def find_the_cheese(cheeses)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  index_of_cheese = cheese_types.index(cheese)
-  if (index_of_cheese != nil)
-    return cheese_types[index_of_cheese]
+  cheeses.each do |cheese|
+    type_index = 0
+    while type_index < cheese_types
+      if (cheese == cheese_types[type_index])
+        return cheese
+      end
+    end
   end
-  index_of_cheese
 end
