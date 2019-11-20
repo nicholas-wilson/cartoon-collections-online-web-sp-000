@@ -7,7 +7,8 @@ end
 def summon_captain_planet(words)
   captains_words = []
   words.each do |word|
-    captains_words << "#{word.upcase}!"
+    word = word.upcase + "!"
+    captains_words << word
   end
   captains_words
 end
