@@ -23,7 +23,7 @@ def find_the_cheese(cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheeses.each do |cheese|
     type_index = 0
-    while type_index < cheese_types
+    while type_index < cheese_types.length
       if (cheese == cheese_types[type_index])
         return cheese
       end
