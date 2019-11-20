@@ -30,4 +30,5 @@ def find_the_cheese(cheeses)
       type_index += 1
     end
   end
+  nil
 end
