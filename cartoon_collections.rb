@@ -27,6 +27,7 @@ def find_the_cheese(cheeses)
       if (cheese == cheese_types[type_index])
         return cheese
       end
+      type_index += 1
     end
   end
 end
